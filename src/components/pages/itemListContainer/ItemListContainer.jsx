@@ -28,16 +28,16 @@ export const ItemListContainer = () => {
       .catch((error) => console.log(error));
   }, [name]);
 
-  // const cargar = () => {
-  //   let refCollection = collection(db, "products");
-  //   products.forEach((product) => {
-  //     addDoc(refCollection, product);
-  //   });
-  // };
+ /* const cargar = () => {
+   let refCollection = collection(db, "products");
+   products.forEach((product) => {
+   addDoc(refCollection, product);
+     });
+   };*/
 
   return (
     <section>
-      {/* <button onClick={cargar}>cargar productos</button> */}
+      { /*<button onClick={cargar}>cargar productos</button> */}
       <h2>Mis productos</h2>
       {items.map((item) => {
         return <ProductCard key={item.id} item={item} />;
